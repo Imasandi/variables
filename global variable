@@ -1,0 +1,18 @@
+"""  global variable"""
+# create out of a function
+# can be used both outside and inside of a variable
+
+x = "awsome"  # global variable
+
+
+def myFunct():
+    global y
+    y = "Not bad" # global variable inside a function
+    x = " Fantastic" # local variable
+    print("I know it is " + x)
+
+
+myFunct()
+
+print("python is " + y)
+print("python is " +y) # global variable inside a function.
